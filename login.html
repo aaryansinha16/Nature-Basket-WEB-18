@@ -26,3 +26,23 @@
     <p id="pera2">Not haven an account? <a href="Singup.html">Sing Up Hear</a></p>
 </body>
 </html>
+<script>
+    function saveData(){
+        var email =document.getElementById("email").value;
+        var pass =document.getElementById("pass").value;
+
+        var data=new Array();
+       data=JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user"));
+if(data.some((v)=>{return v.email==email && v.pass==pass}))
+{
+    alert("Login passwrd");
+    window.location.href="#";
+}
+else
+{
+alert("Login Faild");
+}
+    }
+
+
+</script>
