@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+
+</head>
+<body>
+   <p> <a> HOME  >  Wine & Beer</a></p>
+
+<div id="TOP">
+    <h3>WINE & BEER   <span> 585 Products. </span>  </h3>
+   <select name="" id="sortMrp"  onchange="changepricerate()">
+    <option value="none">Relevence</option>
+    <option value="LTHP">Low to high price</option>
+    <option value="HTLP">High to Low price</option>
+   </select> 
+</div>
+<hr>
+ 
+<p class="ex3"> Explore </p> <hr>
+<!-- wine --> 
+<div id="wine"> 
+ 
+</div>
+
+</body>
+</html>
+<script>
+
+var wineData=[
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1a84b0db-b347-43fd-b5ac-3067178a80b7_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹7250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3abfd2ba-21fb-49c0-a0bb-b50e57506f84_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹3250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/89ce33e9-9688-42b2-8e85-5d9d695d250d_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹1250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bc42b974-bab3-4624-8890-6dd73197e26c_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹3050",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/abbb10ae-127f-489b-8701-3ca6a16c2fc4_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹2250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/0b6afad2-ec59-45ca-9fd9-e4412a3025f9_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹6542",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/f106d971-1f77-40e7-9c1b-3a62a7e808a0_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹7211",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3240fa54-48c8-4fac-bd1e-ca11284d1c0c_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹2250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8c60004e-3de9-4a1f-9604-e6b6299ba76e_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹7250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/52b24528-822b-4a4f-a38f-3ee2617239b2_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹1250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/32ded5b4-7484-4960-9154-b062b9737d7b_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹4250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/475ddd8c-cb0c-4fea-824a-2392833ff18a_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹1230",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3d6dd049-4674-469a-b937-05d80d45ed17_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹3250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/abf21fe1-005a-4ebe-9931-6664974dda3b_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹1250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/62c4298a-af17-4a66-aefa-37ce908bf9c5_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP 7250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d3fae34d-f6d0-4293-a309-379128a412f1_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP 7250",
+        ADD:"ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3b929a0e-d9b7-437c-b823-67bfb01d2ea4_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹5550",
+          ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/eecfc902-e02c-4752-a404-6d26a77f3961_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹6650",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/4ed411ad-1790-400c-990a-3b295e959234_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹1250",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/451e8b0b-7907-4e0c-b322-fb9aa8ce6023_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹4250",
+          ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8c36fdb5-6033-40ab-806f-835f6f5432e6_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹9250",
+          ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/67d818f3-a250-4335-ba2d-4804698449b3_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹7250",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c5e7fea3-cd62-46d1-96d8-9e920f9d60c1_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹27250",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/44f6c2aa-6057-440b-889e-9ed7160917da_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        MRP:"MRP ₹9250",
+          ADD:" ADD"
+       },
+
+      
+    ];
+   
+     
+   //  function changepricerate() {
+   //    var selected = document.querySelector("#sortMrp").value;
+   //    //console.log(selected);
+   //    if (selected == "HTLP") {
+   //      jobArr.sort(function (a, b) {
+   //        return b.personSalary - a.personSalary;
+   //      });
+   //      // console.log(jobArr);
+   //      displayData(jobArr);
+   //    }
+   //    if (selected == "LTHP") {
+   //      jobArr.sort(function (a, b) {
+   //        return a.personSalary - b.personSalary;
+   //      });
+   //      // console.log(jobArr);
+   //      displayData(jobArr);
+   //    }
+   //  }
+
+
+    
+   wineData.forEach(function(elem){
+         console.log(elem);
+        var box =document.createElement("div");
+  
+        var wine_beer=document.createElement("img")
+          wine_beer.setAttribute("src", elem.beer)
+
+        var wine_button=document.createElement("p")
+        wine_button.innerText=elem.TIME;  
+        wine_button.setAttribute("class","min") 
+
+        var wine_brand=document.createElement("p")
+            wine_brand.innerText = elem.brand;
+            wine_brand.setAttribute("class","brand")
+
+        var wine_Peices=document.createElement("h4")
+        wine_Peices.innerText = elem.PEICES;
+
+        var wine_mrp=document.createElement("button")
+        wine_mrp.innerText = elem.MRP;
+        wine_mrp.setAttribute("class","mrp")
+
+        wine_add=document.createElement("button")
+        wine_add.innerText=elem.ADD;
+        wine_add.setAttribute("class","add")
+
+        box.append(wine_beer,wine_button,wine_brand,wine_Peices,wine_mrp,wine_add)
+        document.querySelector("#wine").append(box)
+
+    })
+
+
+
+
+</script>
+
