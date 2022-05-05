@@ -37,22 +37,37 @@
 </body>
 
 </html>
-<script type="text/javascript">
-    const Singup = document.getElementById("Singup1");
+<script>
 
-    const firstname = document.getElementById("fname");
-    const lastname = document.getElementById("lname");
-    const emailid = document.getElementById("email");
-    const password1 = document.getElementById("pass");
+    function saveData() {
+
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+    
+        var data= Array();
+        data=JSON.parse(localStorage.getItem("users"))? JSON.parse(localStorage.getItem("users"));
+        if(data.some((v)=>{returnv.email==email}))
+        {
+            alert("Duplicat DATA")
+        }
+        else
+        {
+
+        }
+    
+    data.push ({
+            "fname": fname,
+            "lname": lname,
+            "email": email,
+            "pass": pass
+        })
         
-   function singupuser(firstname,lastname,emailid,password1){
-       this.firstname= firstname
-       this.lastname= lastname
-       this.emailid= emailid
-       this.password1= password1
-
-   }
-   const user = localStorage.get
+    
+        localStorage.setItem("users",JSON.stringify(Data));
+    }
+  
 
 
 
