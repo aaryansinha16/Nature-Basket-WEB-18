@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="singup.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.html">
+</head>
+
+<body>
+    <div id="singup-box">
+        <h1>Sign up</h1>
+        <form id="Singup1">
+            <label>First Name</label>
+            <input id="fname" type="text" placeholder="First Name">
+
+            <label>Last Name</label>
+            <input id="lname" type="text" placeholder="LAst Name">
+
+            <label>Email ID</label>
+            <input id="email" type="email" placeholder="Email">
+
+            <label>Password</label>
+            <input id="pass" type="password" placeholder="Password">
+            <input type="button" value="Submit" id="btn">
+        </form>
+        <p>By clicking the Sing Up button,you agree to our <br>
+            <a href="#">Terms and Condition</a> and <a href="#">Policy And Privacy</a>
+
+        </p>
+
+    </div>
+    <p id="pera2">Already have an acoount?<a href="login.html">Login Here</a></p>
+</body>
+
+</html>
+<script type="text/javascript">
+    const Singup = document.getElementById("Singup1");
+
+    const firstname = document.getElementById("fname");
+    const lastname = document.getElementById("lname");
+    const emailid = document.getElementById("email");
+    const password1 = document.getElementById("pass");
+        
+   function singupuser(firstname,lastname,emailid,password1){
+       this.firstname= firstname
+       this.lastname= lastname
+       this.emailid= emailid
+       this.password1= password1
+
+   }
+   const user = localStorage.get
+
+
+
+</script>

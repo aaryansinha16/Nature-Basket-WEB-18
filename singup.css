@@ -1,0 +1,71 @@
+
+#singup-box{
+    width: 360px;
+    height: 500px;
+    margin: auto;
+    border-radius: 5px ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#Login{
+    width: 360px;
+    height: 270px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+   
+}
+h4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+    
+}
+form label{
+    display: flex;
+    margin-top: 20px ;
+    font-size: 18px;
+
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid grey;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top:20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+
+}
+p{
+    text-align: center;
+    padding-top: 20px ;
+    font-size:15px;
+}
+#pera2{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+#pera2 a{
+    color: green;
+
+}
+#btn{
+  background-color: green;
+}
