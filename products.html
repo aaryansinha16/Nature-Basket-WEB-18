@@ -266,7 +266,7 @@ var wineData=[
 
     
    wineData.forEach(function(elem){
-         console.log(elem);
+         
         var box =document.createElement("div");
   
         var wine_beer=document.createElement("img")
@@ -292,15 +292,26 @@ var wineData=[
 
         wine_add=document.createElement("button")
         wine_add.innerText=elem.ADD;
+        wine_add.style.cursor="pointer"
+        wine_add.addEventListener("click",function(){
+
+           Myfunc(elem)
+        })
         wine_add.setAttribute("class","add")
+        
 
         box.append(wine_beer,wine_button,wine_brand,wine_Peices,wine_smallmrp,wine_mrp,wine_add)
         document.querySelector("#wine").append(box)
 
     })
-
-
+    var localstr=[]
+function Myfunc(elem){
+   localstr.push(elem)
+   
+}
 // I am testing github editing
+ localStorage.setItem("localdatacart",JSON.stringify(localstr))
+
  
 </script>
 
