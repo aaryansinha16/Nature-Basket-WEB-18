@@ -1,0 +1,208 @@
+*{
+    /* padding: 0px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Here starts the top navigation bar */
+.topnav{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+.midlinks, .search{
+    display: flex;
+}
+.logo{
+    flex-grow: 0;
+}
+
+/* Here starts the topmid navbar */
+.middleSec{
+    flex-grow: 4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.lastSec{
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.midlinks{
+    justify-content: space-around;
+}
+.midlinks>a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+#location{
+    border: transparent;
+}
+#location+button{
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px;
+}
+.search>input[type = "text"]{
+    width: 80%;
+    border-radius: 7px;
+    height: 30px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.search>input + a>img{
+    border-radius: 5px;
+}
+.search{
+    justify-content: center;
+}
+
+/* Here are the last section of the top navigation bar */
+.lastlinks{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.lastlinks>a{
+    text-decoration: none;
+    color: black;
+}
+.cart{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Here starts Bottom Nav */
+.bottomnav{
+    width: 100%;
+    margin: auto;
+}
+.bottomnav>ul{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 15px;
+    /* width: 97%; */
+    /* gap: 10px; */
+}
+.bottomnav>ul>li{
+    padding: 10px;
+    letter-spacing: 2px;
+    
+}
+.bottomnav>ul>li:first-child{
+    background-color: #f3f3f3;
+}
+.bottomnav>ul>li:first-child>a{
+    color: #b71761;
+}
+.bottomnav>ul>li>a{
+    color: black;
+}
+.bottomnav>ul>li:hover{
+    background-color: #f3f3f3;
+    border-bottom: 2px solid rgb(62, 154, 62);
+}
+.sub-menu1{
+    display: none;
+}
+.bottomnav>ul>li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 12px;
+    margin-left: -15px;
+    padding: -30px;
+}
+.bottomnav>ul>li:hover .sub-menu1>ul{
+    list-style: none;
+}
+.bottomnav>ul>li:hover .sub-menu1>ul>li{
+    padding: 8px;
+    /* width: 165px; */
+    width: inherit;
+    border-radius: 0px;
+    background-color: white;
+    margin-left: -35px;
+    border: 1px solid rgb(207, 204, 204);
+}
+.bottomnav>ul>li:first-child:hover .sub-menu1>ul>li:hover{
+    border-bottom: none;
+    background-color: rgb(30, 202, 30);
+}
+.bottomnav>ul>li:hover .sub-menu1>ul>li:hover{
+    border-bottom: none;
+    background-color: rgb(234, 234, 234);
+}
+.sub-menu1 a{
+    color: black;
+    font-size: 14px;
+}
+
+/* Here starts the popup part after clicking the pincode button */
+#dis{
+    display: none;
+    border-top: 4px solid rgb(62, 154, 62);
+    border-right: 1px solid ;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    position: fixed;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+    left: 30%;
+    top: 25%;
+}
+#dis>p{
+    font-size: 13px;
+}
+#pinForm> input[type = "submit"]{
+    background-color: #92be4d;
+    color: white;
+    border-radius: 12px;
+    border: transparent;
+    font-size: 15px;
+    padding: 5px 32px 5px 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#pinForm> input[type = "submit"]:hover{
+    background-color: #729637;
+}
+#pinForm> input[type = "number"]{
+    font-size: 15px;
+    padding: 5px;
+}
+/* Below is the cross button created from js */
+.close{
+    background: #92be4d;
+    border-radius: 50%;
+    border: transparent;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: -170px;
+    left: 51%;
+}
