@@ -1,20 +1,34 @@
-#home{
-    font-size: 20px;
+ #home{
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 100;
+    color: gray;
+  } 
+  span{
+    color: gray;
   }
+
+ *body{
+   width: 70%;
+   margin: auto;
+ }
+
   .exp{
     font-size: 22px;
     font-weight: 200;
     letter-spacing: 2px;
+    margin-left: 10px;
   }
   
   span{
     font-size: 15px;
   }
   div>h3{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
+
   }
-  
+  /* *** box */
    #wine{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -22,6 +36,7 @@
     /* border: 1px solid black; */
     /* gap: 20px; */
     text-align: center;
+    align-content:center ;
     margin: auto;
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -30,14 +45,15 @@
   #wine>div{
     border: 1px solid rgb(230, 223, 223);
     border-radius: 10px;
+    /* margin: !auto; */
      margin: 10px;
-     /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+     width: 85%;
      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
   
   img{
-      width: 90%;
-      margin-top: 20px;
+      width: 80%;
+      margin-top: 30px;
       margin-right: 1px;
       /* box-shadow: 1px 2px #efe9e9; */
       /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
@@ -78,14 +94,16 @@
     border-radius: 10px;
   }
   
-   #explore{   
+   /* #explore{   
      display: grid;
      right: 20px;
-   }
+     margin-left: 10PX;
+   } */
    #TOP{
      display: flex;
      justify-content: space-between;
      align-items: center;
+     margin-left: 10PX;
    }
   
    #sortMrp{
