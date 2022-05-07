@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="singup.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.html">
+</head>
+
+<body>
+    <div id="singup-box">
+        <h1>Sign up</h1>
+        <form id="Singup1">
+            <label>First Name</label>
+            <input id="fname" type="text" placeholder="First Name">
+
+            <label>Last Name</label>
+            <input id="lname" type="text" placeholder="LAst Name">
+
+            <label>Email ID</label>
+            <input id="email" type="email" placeholder="Email">
+
+            <label>Password</label>
+            <input id="pass" type="password" placeholder="Password">
+            <input type="button" value="Submit" id="btn">
+        </form>
+        <p>By clicking the Sing Up button,you agree to our <br>
+            <a href="#">Terms and Condition</a> and <a href="#">Policy And Privacy</a>
+
+        </p>
+
+    </div>
+    <p id="pera2">Already have an acoount?<a href="login.html">Login Here</a></p>
+</body>
+
+</html>
+<script>
+
+    function saveData() {
+
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+    
+        var data= Array();
+        data=JSON.parse(localStorage.getItem("users"))? JSON.parse(localStorage.getItem("users"));
+        if(data.some((v)=>{returnv.email==email}))
+        {
+            alert("Duplicat DATA")
+        }
+        else
+        {
+
+        }
+    
+    data.push ({
+            "fname": fname,
+            "lname": lname,
+            "email": email,
+            "pass": pass
+        })
+        
+    
+        localStorage.setItem("users",JSON.stringify(Data));
+    }
+  
+
+
+
+</script>
