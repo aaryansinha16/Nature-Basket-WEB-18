@@ -9,7 +9,7 @@
 
 </head>
 <body>
-   <p> <a> HOME  >  Wine & Beer</a></p>
+   <p id="home"> <a> HOME  >  Wine & Beer</a></p>
 
 <div id="TOP">
     <h3>WINE & BEER   <span> 585 Products. </span>  </h3>
@@ -21,7 +21,7 @@
 </div>
 <hr>
  
-<p class="ex3"> Explore </p> <hr>
+<p class="exp"> Explore </p> <hr>
 <!-- wine --> 
 <div id="wine"> 
  
@@ -34,32 +34,35 @@
 var wineData=[
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1a84b0db-b347-43fd-b5ac-3067178a80b7_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
         PEICES:"1PC",
+        smallmrp:"7250",
         MRP:"MRP ₹7250",
-        mrp: "7250",
         ADD:" ADD"
        },
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3abfd2ba-21fb-49c0-a0bb-b50e57506f84_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"3250",
         MRP:"MRP ₹3250",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/89ce33e9-9688-42b2-8e85-5d9d695d250d_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
         PEICES:"1PC",
+        smallmrp:"1250",
         MRP:"MRP ₹1250",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bc42b974-bab3-4624-8890-6dd73197e26c_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"VINA ERRAZURIZ E SERIES CHARDONNAY7.. ",
         PEICES:"1PC",
+        smallmrp:"3050",
         MRP:"MRP ₹3050",
         ADD:" ADD"
        },
@@ -68,6 +71,7 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"2250",
         MRP:"MRP ₹2250",
         ADD:" ADD"
        },
@@ -75,14 +79,16 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"6542",
         MRP:"MRP ₹6542",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/f106d971-1f77-40e7-9c1b-3a62a7e808a0_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"VINA ERRAZURIZ E SERIES CHARDONNAY7.. ",
         PEICES:"1PC",
+        smallmrp:"7211",
         MRP:"MRP ₹7211",
         ADD:" ADD"
        },
@@ -91,14 +97,16 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"2250",
         MRP:"MRP ₹2250",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8c60004e-3de9-4a1f-9604-e6b6299ba76e_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        brand:"VINA ERRAZURIZ E SERIES CHARDONNAY7.. ",
         PEICES:"1PC",
+        smallmrp:"7250",
         MRP:"MRP ₹7250",
         ADD:" ADD"
        },
@@ -106,22 +114,25 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"1250",
         MRP:"MRP ₹1250",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/32ded5b4-7484-4960-9154-b062b9737d7b_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        brand:"Budweiser 650ML",
         PEICES:"1PC",
+        smallmrp:"4250",
         MRP:"MRP ₹4250",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/475ddd8c-cb0c-4fea-824a-2392833ff18a_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
         PEICES:"1PC",
+        smallmrp:"1230",
         MRP:"MRP ₹1230",
         ADD:" ADD"
        },
@@ -130,13 +141,15 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"3250",
         MRP:"MRP ₹3250",
         ADD:" ADD"
        },
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/abf21fe1-005a-4ebe-9931-6664974dda3b_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
         PEICES:"1PC",
+        smallmrp:"1250",
         MRP:"MRP ₹1250",
         ADD:" ADD"
        },
@@ -145,21 +158,24 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
-        MRP:"MRP 7250",
+        smallmrp:"9250",
+        MRP:"MRP ₹9250",
         ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d3fae34d-f6d0-4293-a309-379128a412f1_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
         PEICES:"1PC",
-        MRP:"MRP 7250",
+        smallmrp:"3250",
+        MRP:"MRP ₹3250",
         ADD:"ADD"
        },
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3b929a0e-d9b7-437c-b823-67bfb01d2ea4_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
         PEICES:"1PC",
+        smallmrp:"5550",
         MRP:"MRP ₹5550",
           ADD:" ADD"
        },
@@ -167,14 +183,16 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"6650",
         MRP:"MRP ₹6650",
           ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/4ed411ad-1790-400c-990a-3b295e959234_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"Budweiser 650ML",
         PEICES:"1PC",
+        smallmrp:"1250",
         MRP:"MRP ₹1250",
           ADD:" ADD"
        },
@@ -183,20 +201,23 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"4250",
         MRP:"MRP ₹4250",
           ADD:" ADD"
        },
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8c36fdb5-6033-40ab-806f-835f6f5432e6_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
         PEICES:"1PC",
+        smallmrp:"9250",
         MRP:"MRP ₹9250",
           ADD:" ADD"
        },
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/67d818f3-a250-4335-ba2d-4804698449b3_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
         PEICES:"1PC",
+        smallmrp:"7250",
         MRP:"MRP ₹7250",
           ADD:" ADD"
        },
@@ -205,14 +226,16 @@ var wineData=[
        TIME:"DELIVERY IN 90 MINUTES",
         brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
         PEICES:"1PC",
+        smallmrp:"27250",
         MRP:"MRP ₹27250",
           ADD:" ADD"
        },
 
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/44f6c2aa-6057-440b-889e-9ed7160917da_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
-        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+       brand:"Budweiser 650ML",
         PEICES:"1PC",
+        smallmrp:"9250",
         MRP:"MRP ₹9250",
           ADD:" ADD"
        },
@@ -254,11 +277,14 @@ var wineData=[
         wine_button.setAttribute("class","min") 
 
         var wine_brand=document.createElement("p")
-            wine_brand.innerText = elem.brand;
-            wine_brand.setAttribute("class","brand")
+        wine_brand.innerText = elem.brand;
+        wine_brand.setAttribute("class","brand")
 
         var wine_Peices=document.createElement("h4")
         wine_Peices.innerText = elem.PEICES;
+
+        var wine_smallmrp=document.createElement("p")
+        wine_smallmrp.innerText=elem.smallmrp;
 
         var wine_mrp=document.createElement("button")
         wine_mrp.innerText = elem.MRP;
@@ -268,7 +294,7 @@ var wineData=[
         wine_add.innerText=elem.ADD;
         wine_add.setAttribute("class","add")
 
-        box.append(wine_beer,wine_button,wine_brand,wine_Peices,wine_mrp,wine_add)
+        box.append(wine_beer,wine_button,wine_brand,wine_Peices,wine_smallmrp,wine_mrp,wine_add)
         document.querySelector("#wine").append(box)
 
     })
