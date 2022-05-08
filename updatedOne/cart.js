@@ -190,18 +190,24 @@ var slide = document.getElementsByClassName("dummy")
 slide[0].style.display = "block"
 
 function controler(x) {
-    if (x == -1) {
+    if (x == 1) {
         for (y of slide) {
             y.style.display = "none"
         }
         slide[0].style.display = "block"
     }
-    if (x == 1) {
+    if (x == -1) {
         for (y of slide) {
             y.style.display = "none"
         }
         slide[1].style.display = "block"
     }
 }
-
+var slider=document.querySelectorAll(".btn")
+    for(x of slider){
+        x.addEventListener("click",function(){
+            
+            window.location.href="products.html"
+        })
+    }
 // 
