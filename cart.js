@@ -48,7 +48,7 @@ if (localdatacart.length == 0) {
     btn.innerText = "Continue Shoping "
     btn.style.cursor = "pointer"
     btn.addEventListener("click", function () {
-        window.location.href = "git addproducts.html"
+        window.location.href = "products.html"
     })
     cart_detail.append(emptyicon, notice, btn)
     document.querySelector(".container").append(cart_detail)
@@ -56,7 +56,7 @@ if (localdatacart.length == 0) {
 }
 else {
     var subt = localdatacart.reduce(function (sum, ele) {
-        return sum + ele.MRP
+        return sum + ele.smallmrp
     }, 0)
 
     var delcharge = 50
@@ -90,6 +90,9 @@ else {
     checkout.setAttribute("class", "checkout")
     var checkbtn = document.createElement("button")
     checkbtn.innerText = "PROCEED TO CHECKOUT"
+    checkbtn.addEventListener("click",function(){
+        window.location.href="login.html"
+    })
     checkout.append(checkbtn)
     upper.append(today)
     lower.append(subtotal, checkout)
@@ -97,7 +100,7 @@ else {
     document.querySelector(".container").append(added_card)
     var detail = document.querySelector("#upper")
     localdatacart.forEach(function (ele) {
-        var abc = ele.MRP
+        var abc = ele.smallmrp
         var box = document.createElement("div")
         box.setAttribute('class', "box")
         var data1 = document.createElement("div")
@@ -168,7 +171,7 @@ else {
         var newlocaldata = localdatacart.filter(function (element)//here is little bug if two products MRP are same then this function neglect both
         {
 
-            return ele.MRP != element.MRP
+            return ele.smallmrp != element.smallmrp
         })
         console.log(newlocaldata)
 
