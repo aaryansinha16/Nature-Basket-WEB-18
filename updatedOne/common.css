@@ -1,0 +1,174 @@
+/* img{
+    width: 100%;
+} */
+div>img{
+    width: 100%;
+}
+body{
+    width: 90%;
+    margin: auto;
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+}
+.home>div{
+    border: 1px solid grey;
+    margin: 20px 10px 0px 10px;
+    border-radius: 20px;
+    
+}
+#bar{
+    display: flex;
+    justify-content: space-around;
+    background-color:grey;
+    font-size: 28px;
+    width: 100%;
+    padding: 10px;
+    gap: 8px;
+}
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#bar>div:hover{
+    background-color: blue;
+}
+.home>div>img{
+    border-radius: 20px;
+}
+.trend{
+     text-align: center;
+     font-family: arial;
+     font-weight: 100;
+}
+
+#crs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+}
+#crs>div{
+    
+    margin: 20px 10px 0px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+#crs>div>img{
+    border-radius: 10px;
+}
+.trend{
+    text-align: center;}
+
+  .add{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(1,auto);
+      text-align: center;
+      
+  }  
+  .add>div{
+    margin: 20px 10px 0px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+  .add>div>img{
+    border-radius: 10px;
+  }
+  .btn{
+      display: flex;
+      justify-content: space-around;
+      
+  }
+ button{
+      padding:  7px 20px;
+      width: 100px;
+      margin-top: 13px;
+      background-color: green;
+      border-radius: 5px;
+      border: none;
+  }
+  .btn>div>p{
+border: 1px solid grey;
+padding: 10px;
+border-radius: 5px;
+  }
+.chunk{
+    
+    line-height: 3px;
+    height: 200px;
+}
+.chunk>p {
+    color: #880033
+}
+.navbar>img{
+    width: 100%;
+    margin-top: 20px;
+}
+.event{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+}
+.event>div{
+    margin: 10px 10px 10px 10px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,auto);
+}
+.shop>div{
+    
+    margin: 20px 10px 0px 10px;
+    border-radius: 20px;
+}
+
+   
+
+
+
+

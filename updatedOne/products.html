@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Supermarket & Premium Grocery Shopping Store in India - Nature's Basket</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="common.css"/>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+   <nav>
+      <!-- Here starts top navigation -->
+      <div class="topnav">
+          <div class="logo">
+              <img src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2" alt="">
+          </div>
+          <div class="middleSec">
+              <div class="midlinks">
+                  <a href="#">Store Locator</a>
+                  <a href="#">Contact Us</a>
+                  <select name="" id="location">
+                      <option value="mumbai">Mumbai</option>
+                      <option value="pune">Pune</option>
+                      <option value="dehiNCR">Delhi NCR</option>
+                      <option value="bengaluru">Bengaluru</option>
+                      <option value="thane">Thane</option>
+                      <option value="kolkata">Kolkata</option>
+                      <option value="raigadh">Raigadh</option>
+                  </select>
+                  <button id="pincode" >Enter Pincode</button>
+              </div>
+              <div class="search">
+                  <input type="text" placeholder="Start Shopping...">
+                  <a href="#"><img src="https://www.naturesbasket.co.in/Images/search-button.jpg" alt=""></a>
+              </div>
+          </div>
+          <div class="lastSec">
+              <div class="lastlinks">
+                  <a href="login.html">Login  |</a>
+                  <a href="Singup.html">| Register</a>
+              </div>
+              <div class="cart">
+               <a href="products.html"><img src="images/star-free-icon-font.png" alt=""></a>
+               <a href="Cart.html"><img src="images/shopping-cart-free-icon-font.png" alt=""></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Here starts bottom navigation -->
+      <div class="bottomnav">
+          <ul>
+              <li><a href="#">SHOP BY CATEGORY</a>
+                  <div class="sub-menu1">
+                      <ul>
+                          <li><a href="#">Gift Hamper's</a></li>
+                          <li><a href="products.html">Cheese,Meat & Food Platers</a></li>
+                          <li><a href="#">International Cuisine</a></li>
+                          <li><a href="#">Health</a></li>
+                          <li><a href="#">Indian Grocery</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="#">PAST PURCHASES</a></li>
+              <li><a href="#">GIFTING</a></li>
+              <li><a href="#">REWARDS</a></li>
+              <li><a href="#">BLOG</a>
+                  <div class="sub-menu1">
+                      <ul>
+                          <li><a href="#">EVERYTHING FOOD</a></li>
+                          <li><a href="#">RECIPE</a></li>
+                          <li><a href="#">NEWSLETTER</a></li>
+                          <li><a href="#">NBTV</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="#">OFFERS</a></li>
+              <li><a href="#">CONNOISSEUR'S SELECTION</a>
+                  <div class="sub-menu1">
+                      <ul>
+                          <li><a href="#">L'EXCLUSIF</a></li>
+                          <li><a href="#">HEALTHY ALTERNATIVES</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="#">BOOK STORE VISIT</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div id="dis">
+      <h3>Enter Your Delivery Pincode</h3>
+      <form id="pinForm">
+          <input type="number" placeholder="Delivery Pincode" id="pin">
+          <input type="submit">
+      </form>
+      <p>Entering your delivery pincode will allow us to show you the products available in your area and to ensure timely delivery.</p>
+  </div>
+
+   <!-- Navbar ends here -->
+
+   <p id="home"> <a href="homepage.html">Home</a> >  Wine & Beer</a></p>
+
+<div id="TOP">
+    <h3>WINE & BEER   <span> 585 Products. </span>  </h3>
+   <select name="" id="sortMrp"  onchange="changepricerate()">
+    <option value="none">Relevence</option>
+    <option value="LTHP">Low to high price</option>
+    <option value="HTLP">High to Low price</option>
+   </select> 
+</div>
+<hr>
+ 
+<p class="exp"> Explore </p> <hr>
+<!-- wine --> 
+<div id="wine"> 
+ 
+</div>
+
+   <!-- Here starts the top footer -->
+   <footer>
+      <div id="topfooter">
+          <div class="fiveSection">
+              <h4>DOWNLOAD THE APP</h4>
+              <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/get-it-on-google-play.svg" alt=""></a>
+              <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt=""></a>
+          </div>
+          <div class="fiveSection">
+              <h4>ABOUT US</h4>
+              <a href="#">About Us</a><br>
+              <a href="#">Our Vision & Purpose</a><br>
+              <a href="#">Quality Standards</a><br>
+              <a href="#">Awards</a><br>
+              <a href="#">FAQ's</a><br>
+              <a href="#">Vendor Connect</a><br>
+
+              <h4>CAREERS</h4>
+              <a href="#">Work with us</a>
+          </div>
+          <div class="fiveSection">
+              <h4>NEWS & MEDIA</h4>
+              <a href="#">Press releases</a><br>
+              <a href="#">Newsletters</a><br>
+              <a href="#">Events</a><br>
+              <a href="#">Photo Gallery</a><br>
+              <a href="#">Recipes</a><br>
+              <a href="#">NBTV</a><br>
+              <a href="#">Our Virtual Store</a><br>
+          </div>
+          <div class="fiveSection">
+              <h4>OUR POLICIES</h4>
+              <a href="#">Privacy policy</a><br>
+              <a href="#">Payment policy</a><br>
+              <a href="#">Disclaimer</a><br>
+              <a href="#">Statutory Complaince</a><br>
+              <a href="#">Data protection policy</a><br>
+              <a href="#">Grievance Officer</a><br>
+              <a href="#">Information Security Policy</a><br>
+          </div>
+          <div class="fiveSection">
+              <h4>SIGN UP TO STAY UPDATED</h4>
+              <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS">
+              <button>SUBSCRIBE</button>
+          </div>
+      </div>
+
+      <!-- Here starts the middle part of the footer(Payment Method) -->
+      <hr>
+      <div id="midfooter">
+          <div class="payment">
+              Payment Method
+              <img src="https://www.naturesbasket.co.in/Images/icons-card-payments-mode.png" alt="">
+          </div>
+          <div class="social">
+              Keep in Touch
+              <a href="#"><img src="images/facebook.png" alt=""></a>
+              <a href="#"><img src="images/twitter.png" alt=""></a>
+              <a href="#"><img src="images/youtube.png" alt=""></a>
+              <a href="#"><img src="images/instagram.png" alt=""></a>
+              <a href="#"><img src="images/pinterest.png" alt=""></a>
+          </div>
+      </div>
+      <hr>
+
+      <!-- Here starts the bottom most part of the footer(Privacy Policy.etc.) -->
+      <div id="bottomfooter">
+          <ul>
+              <li>© 2020 Natures Basket Limited.  All rights reserved.</li>
+              <li>|</li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li>|</li>
+              <li><a href="#">Terms of Use</a></li>
+              <li>|</li>
+              <li>Home Delivery Number - 8880077745</li>
+              <li>|</li>
+              <li><a href="#">Site Map</a></li>
+              <li>|</li>
+              <li><a href="#"></a>Mobile Site</li>
+              <li>|</li>
+              <li>FSSAI License Number - 1151900200049</li>
+          </ul>
+      </div>
+  </footer>
+
+</body>
+<script src="nav.js"></script>
+</html>
+<script>
+
+var wineData=[
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1a84b0db-b347-43fd-b5ac-3067178a80b7_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
+        PEICES:"1PC",
+        smallmrp:7250,
+        MRP:"MRP ₹7250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3abfd2ba-21fb-49c0-a0bb-b50e57506f84_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:3250,
+        MRP:"MRP ₹3250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/89ce33e9-9688-42b2-8e85-5d9d695d250d_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
+        PEICES:"1PC",
+        smallmrp:1250,
+        MRP:"MRP ₹1250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bc42b974-bab3-4624-8890-6dd73197e26c_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"VINA ERRAZURIZ E SERIES CHARDONNAY7.. ",
+        PEICES:"1PC",
+        smallmrp:3050,
+        MRP:"MRP ₹3050",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/abbb10ae-127f-489b-8701-3ca6a16c2fc4_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:2250,
+        MRP:"MRP ₹2250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/0b6afad2-ec59-45ca-9fd9-e4412a3025f9_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:6542,
+        MRP:"MRP ₹6542",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/f106d971-1f77-40e7-9c1b-3a62a7e808a0_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"VINA ERRAZURIZ E SERIES CHARDONNAY7.. ",
+        PEICES:"1PC",
+        smallmrp:7211,
+        MRP:"MRP ₹7211",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3240fa54-48c8-4fac-bd1e-ca11284d1c0c_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:2250,
+        MRP:"MRP ₹2250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8c60004e-3de9-4a1f-9604-e6b6299ba76e_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"VINA ERRAZURIZ E SERIES CHARDONNAY7.. ",
+        PEICES:"1PC",
+        smallmrp:7250,
+        MRP:"MRP ₹7250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/52b24528-822b-4a4f-a38f-3ee2617239b2_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:1250,
+        MRP:"MRP ₹1250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/32ded5b4-7484-4960-9154-b062b9737d7b_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"Budweiser 650ML",
+        PEICES:"1PC",
+        smallmrp:4250,
+        MRP:"MRP ₹4250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/475ddd8c-cb0c-4fea-824a-2392833ff18a_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
+        PEICES:"1PC",
+        smallmrp:1230,
+        MRP:"MRP ₹1230",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3d6dd049-4674-469a-b937-05d80d45ed17_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:3250,
+        MRP:"MRP ₹3250",
+        ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/abf21fe1-005a-4ebe-9931-6664974dda3b_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
+        PEICES:"1PC",
+        smallmrp:1250,
+        MRP:"MRP ₹1250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/62c4298a-af17-4a66-aefa-37ce908bf9c5_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:9250,
+        MRP:"MRP ₹9250",
+        ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d3fae34d-f6d0-4293-a309-379128a412f1_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
+        PEICES:"1PC",
+        smallmrp:3250,
+        MRP:"MRP ₹3250",
+        ADD:"ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3b929a0e-d9b7-437c-b823-67bfb01d2ea4_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
+        PEICES:"1PC",
+        smallmrp:5550,
+        MRP:"MRP ₹5550",
+          ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/eecfc902-e02c-4752-a404-6d26a77f3961_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:6650,
+        MRP:"MRP ₹6650",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/4ed411ad-1790-400c-990a-3b295e959234_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"Budweiser 650ML",
+        PEICES:"1PC",
+        smallmrp:1250,
+        MRP:"MRP ₹1250",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/451e8b0b-7907-4e0c-b322-fb9aa8ce6023_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:4250,
+        MRP:"MRP ₹4250",
+          ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8c36fdb5-6033-40ab-806f-835f6f5432e6_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"FRANCIS FORD COP R & B CHARDONNAY 75.. ",
+        PEICES:"1PC",
+        smallmrp:9250,
+        MRP:"MRP ₹9250",
+          ADD:" ADD"
+       },
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/67d818f3-a250-4335-ba2d-4804698449b3_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"PENFOLDS BIN 389 CABERNET SHIRAZ 75... ",
+        PEICES:"1PC",
+        smallmrp:7250,
+        MRP:"MRP ₹7250",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c5e7fea3-cd62-46d1-96d8-9e920f9d60c1_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+        brand:"STAGS LEAP CHARDONNAY NAPA VALLEY ",
+        PEICES:"1PC",
+        smallmrp:27250,
+        MRP:"MRP ₹27250",
+          ADD:" ADD"
+       },
+
+       {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/44f6c2aa-6057-440b-889e-9ed7160917da_425x425.jpg",
+       TIME:"DELIVERY IN 90 MINUTES",
+       brand:"Budweiser 650ML",
+        PEICES:"1PC",
+        smallmrp:9250,
+        MRP:"MRP ₹9250",
+          ADD:" ADD"
+       },
+
+      
+    ];
+   
+     
+   //  function changepricerate() {
+   //    var selected = document.querySelector("#sortMrp").value;
+   //    //console.log(selected);
+   //    if (selected == "HTLP") {
+   //      jobArr.sort(function (a, b) {
+   //        return b.personSalary - a.personSalary;
+   //      });
+   //      // console.log(jobArr);
+   //      displayData(jobArr);
+   //    }
+   //    if (selected == "LTHP") {
+   //      jobArr.sort(function (a, b) {
+   //        return a.personSalary - b.personSalary;
+   //      });
+   //      // console.log(jobArr);
+   //      displayData(jobArr);
+   //    }
+   //  }
+
+
+    
+   wineData.forEach(function(elem){
+         
+        var box =document.createElement("div");
+  
+        var wine_beer=document.createElement("img")
+          wine_beer.setAttribute("src", elem.beer)
+          wine_beer.setAttribute("class", "prodImg")
+
+        var wine_button=document.createElement("p")
+        wine_button.innerText=elem.TIME;  
+        wine_button.setAttribute("class","min") 
+
+        var wine_brand=document.createElement("p")
+        wine_brand.innerText = elem.brand;
+        wine_brand.setAttribute("class","brand")
+
+        var wine_Peices=document.createElement("h4")
+        wine_Peices.innerText = elem.PEICES;
+
+        var wine_smallmrp=document.createElement("p")
+        wine_smallmrp.innerText=elem.smallmrp;
+
+        var wine_mrp=document.createElement("button")
+        wine_mrp.innerText = elem.MRP;
+        wine_mrp.setAttribute("class","mrp")
+
+        wine_add=document.createElement("button")
+        wine_add.innerText=elem.ADD;
+        wine_add.style.cursor="pointer"
+        wine_add.addEventListener("click",function(){
+
+           Myfunc(elem)
+        })
+        wine_add.setAttribute("class","add")
+        
+
+        box.append(wine_beer,wine_button,wine_brand,wine_Peices,wine_smallmrp,wine_mrp,wine_add)
+        document.querySelector("#wine").append(box)
+
+    })
+    var localstr= JSON.parse(localStorage.getItem("localdatacart"))||[]
+function Myfunc(elem){
+   localstr.push(elem)
+   localStorage.setItem("localdatacart",JSON.stringify(localstr))
+   
+}
+// I am testing github editing
+ var localdata=JSON.parse(localStorage.getItem("localdatacart"))
+ 
+</script>
+

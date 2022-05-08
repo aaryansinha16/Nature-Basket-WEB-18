@@ -1,0 +1,98 @@
+/* Here start the common styles for whole footer */
+
+footer{
+    width: 100%;
+    background-color: #fbfbfb;
+}
+h4,a{
+    font-family: helvetica;
+}
+h4{
+    font-weight: 500;
+    font-size: 14px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Ends */
+
+/* Here starts the Top footer */
+
+#topfooter{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 15px;
+}
+.fiveSection{
+    width: 15%;
+    line-height: 25px;
+}
+.fiveSection:first-child, .fiveSection:nth-child(2),.fiveSection:nth-child(3),.fiveSection:nth-child(4){
+    flex-grow: 1;
+}
+.fiveSection:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1.5;
+}
+.fiveSection>a{
+    font-size: 14px;
+}
+.fiveSection>a>img{
+    width: 80%;
+}
+.fiveSection>a{
+    color: gray;
+}
+.fiveSection>button{
+    background-color: #99c655;
+    color: white;
+    border: transparent;
+    padding: 10px 15px 10px 15px;
+    width: 60%;
+    cursor: pointer;
+}
+.fiveSection>input[type = "text"]{
+    padding: 10px;
+    border: 1px solid gray;
+}
+/* Ends */
+
+/* Here starts the Middle footer */
+#midfooter{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    width: 80%;
+}
+.payment{
+    display: flex;
+    align-items: center;
+}
+.social>{
+    display: flex;
+    align-items: center;
+}
+/* Ends */
+
+/* Here starts the Bottom footer */
+#bottomfooter{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#bottomfooter>ul{
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+/* Ends */
