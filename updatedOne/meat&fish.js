@@ -208,6 +208,10 @@ div2.setAttribute("class","innerDiv")
 
 var Img=document.createElement("img")
 Img.src=elem.productImg
+Img.setAttribute("class", "productImg")
+    
+var link = document.createElement("a")
+link.setAttribute("href", "nature.html")
 
 var Pb=document.createElement("p")
 Pb.innerText="DELIVERY IN 90 MINUTES"
@@ -242,7 +246,8 @@ addToCart(elem)
 })
 
 div2.append(Pr,add)
-DIV.append(Img,Pb,Pn,H4,div2)
+link.append(Img)
+DIV.append(link,Pb,Pn,H4,div2)
 display.append(DIV)
 
 });
