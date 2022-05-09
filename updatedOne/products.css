@@ -81,16 +81,22 @@
     border-radius: 10px;
      padding: 10px;
      margin: auto;
-     margin-bottom: 5px;
+     margin-bottom: 8px;
+     padding-top: 10px;
+     padding-bottom: 10px;
   }
 
-   #add{
-       background-color:  #b2d678;
+
+ #add{
+       background-color:  #98ca48;
        border-radius: 10px;
        color: rgb(240, 240, 240);
        margin-left: 10px;
-       margin-bottom: 5px;
+       margin-bottom: 8px;
+       padding-top: 10px;
+       padding-bottom: 10px;
    }
+   
    #add:hover{
      background-color: rgb(44, 121, 44);
    }
