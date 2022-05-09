@@ -99,7 +99,7 @@ body{
     select{
         border: none;
     }
-    img{
+    .productImg{
         width: 90%;
         height: 50%;
 
