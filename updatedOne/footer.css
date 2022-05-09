@@ -1,152 +1,98 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap%27);
+/* Here start the common styles for whole footer */
 
-body {
-    font-family: 'Poppins',
-        sans-serif;
-}
-
-#footerContent {
+footer{
     width: 100%;
-    margin: auto;
-    font-size: 12px;
-    /* background-color: gainsboro; */
+    background-color: #fbfbfb;
 }
-
-.footer-clean {
-    width: 100%;
-    height: auto;
-    margin: 20px 0px;
-    font-family: 'Poppins',
-        sans-serif;
-    color: grey;
-    display: flex;
-    justify-content: space-evenly;
+h4,a{
+    font-family: helvetica;
 }
-
-.box>div>img {
-    height: 80px;
-    width: 170px;
-}
-
-#box {
-    width: 100%;
-    height: 300px;
-    font-family: 'Poppins',
-        sans-serif;
-}
-
-#box>div {
-    bottom: -20px;
-}
-
-#btn {
-    display: block;
-}
-
-#btn1>div:nth-child(2)>input {
-    height: 40px;
-    width: 105%;
-    color: grey;
-    border: 1px solid grey;
-
-}
-
-#btn1>div:nth-child(2) {
-    margin-bottom: 20px;
-}
-
-#box1 {
-    width: 100%;
-    height: 300px;
-
-    display: flex;
-}
-
-/* #box-5{
-    margin-top: -400px;
-} */
-#fcontainer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    margin: 40px 0px 0px 0px;
-
-}
-
-#fcontainer>div {
-    font-size: 12px;
-}
-
-#fcontainer>div>div {
-    margin-bottom: 30px;
-}
-
-#fcontainer>div>div>ul {
-    cursor: pointer;
-    color: grey;
-    font-size: 12px;
-}
-
-h4 {
-    color: black;
-}
-
-#imgcollection {
-    display: flex;
-    width: 100%;
-    height: 55px;
-    justify-content: space-between;
-    margin: 0px 0px 20px 0px;
-    border-top: 1px solid gainsboro;
-    border-bottom: 1px solid gainsboro;
-}
-#imgcollection p{
+h4{
+    font-weight: 500;
     font-size: 14px;
 }
-
-#imgcollection>div {
-    width: 50%;
+ul{
+    list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
+/* Ends */
 
+/* Here starts the Top footer */
 
-#imgcollection>div:nth-child(2) {
+#topfooter{
     display: flex;
-    justify-content: flex-end;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 15px;
 }
-
-#imgcollection>div>img {
-    width: 400px;
-    height: 100%;
-    margin-left: 20px;
-
+.fiveSection{
+    width: 15%;
+    line-height: 25px;
 }
-
-#btn {
-    background-color: #92be4d;
-    padding: 10px 20px 10px 20px;
+.fiveSection:first-child, .fiveSection:nth-child(2),.fiveSection:nth-child(3),.fiveSection:nth-child(4){
+    flex-grow: 1;
+}
+.fiveSection:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1.5;
+}
+.fiveSection>a{
+    font-size: 14px;
+}
+.fiveSection>a>img{
+    width: 80%;
+}
+.fiveSection>a{
+    color: gray;
+}
+.fiveSection>button{
+    background-color: #99c655;
     color: white;
+    border: transparent;
+    padding: 10px 15px 10px 15px;
+    width: 60%;
+    cursor: pointer;
 }
+.fiveSection>input[type = "text"]{
+    padding: 10px;
+    border: 1px solid gray;
+}
+/* Ends */
 
-/* #imgcollection>div:nth-child(1)>p:nth-child(1) {
-    padding-top: 15px;
-    width: 30%;
-} */
-
-/* #imgcollection>div:nth-child(2)>p:nth-child(1) {
-    margin-left: 10px;
-    padding: 15px;
-} */
-
-#imgcollection>div {
+/* Here starts the Middle footer */
+#midfooter{
+    width: 80%;
+    margin: auto;
     display: flex;
-    /* margin-right: 60px;
-    margin-left: 70px; */
+    justify-content: space-between;
 }
+hr{
+    width: 80%;
+}
+.payment{
+    display: flex;
+    align-items: center;
+}
+.social>{
+    display: flex;
+    align-items: center;
+}
+/* Ends */
 
-#imgcollection>div:nth-child(2)>img {
-    width: 50%
+/* Here starts the Bottom footer */
+#bottomfooter{
+    display: flex;
+    width: 80%;
+    margin: auto;
 }
-/* input{
-    width: 80px;
-    height: 40px;
-} */
+#bottomfooter>ul{
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+/* Ends */
