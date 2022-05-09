@@ -7,12 +7,11 @@
   span{
     color: gray;
   }
-
+/* 
  *body{
    width: 70%;
    margin: auto;
- }
-
+ } */
   .exp{
     font-size: 22px;
     font-weight: 200;
@@ -34,12 +33,11 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: (5,auto);
     /* border: 1px solid black; */
-    /* gap: 20px; */
     text-align: center;
     align-content:center ;
     margin: auto;
-    position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    margin-bottom: 10px;
   }
   
   #wine>div{
@@ -47,8 +45,11 @@
     border-radius: 10px;
     /* margin: !auto; */
      margin: 10px;
-     width: 85%;
+     width: 95%;
      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  #wine>div:hover{
+    box-shadow: rgba(252, 248, 248, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
   
   .prodImg{
@@ -61,44 +62,40 @@
       border: 1px solid rgb(214, 205, 205);
       border-radius: 10px;
   }
-  
-   button{
-       margin: 10px;
-       padding: 10px;
+   .prodImg:hover{
+    box-shadow: rgba(153, 55, 55, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border: #492130;
    }
-   .brand{
-     font-size: 17px;
-     color: #a72756;
-     line-height: 28px;
-   }
-  
-   .add{
-       background-color:  #b2d678;
-       border-radius: 10px;
-       color: rgb(240, 240, 240);
-       padding: 10px 20px 10px 30px ;
-   }
-  
-   .min{
+
+  .min{
     border: 0.5px solid #b61671;
        border-radius: 10px;
        font-size: 12px;
        margin-left: 10px;
-       /* margin: auto; */
-       /* width: 160px; */
        color: #880033;
        background: #d0b28b17; 
    }
-  .mrp{
-    background-color: white;
-    border-radius: 10px;
-  }
   
-   /* #explore{   
-     display: grid;
-     right: 20px;
-     margin-left: 10PX;
-   } */
+   .mrp{
+    background-color:  #f7f4f4;
+    border-radius: 10px;
+     padding: 10px;
+     margin: auto;
+     margin-bottom: 5px;
+  }
+
+   #add{
+       background-color:  #b2d678;
+       border-radius: 10px;
+       color: rgb(240, 240, 240);
+       margin-left: 10px;
+       margin-bottom: 5px;
+   }
+   #add:hover{
+     background-color: rgb(44, 121, 44);
+   }
+  
+  
    #TOP{
      display: flex;
      justify-content: space-between;
@@ -109,10 +106,16 @@
    #sortMrp{
       border: transparent;
    } 
+
    a{
      text-decoration: none;
    }
   
+   .brand{
+    font-size: 17px;
+    color: #a72756;
+    line-height: 28px;
+  }
   
   
    
