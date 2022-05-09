@@ -27,6 +27,11 @@ float:right;
     border-bottom: 1.5px solid #534a4a;
 
 }
+#cart_detail button{
+    height:20%;
+    width:50%;
+    border-radius: 10px;
+}
 
 img,
 h3 {
