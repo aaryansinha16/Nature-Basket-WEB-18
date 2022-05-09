@@ -1,0 +1,135 @@
+#kkr{
+    display:flex;
+    gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+}
+#kkr img{
+    height: 400px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#kkr > div{
+    padding: -20px;
+    
+}
+#kkr3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top:10px;
+}
+#kkr3 img{
+      height: 50px;
+      width: 50px;
+}
+#kkr4 {
+    height: 14px;
+    width: 204px;
+    font-size: 11px;
+    color: rgb(129, 8, 28);
+    background-color: #ffffff;
+    border: 2px solid pink;
+    border-radius: 12px;
+    text-align: center;
+    padding: 5px 2px;
+    font-weight: bold;
+    margin: auto;
+}
+i{
+    width: 25px;
+    color:red;
+    height: 17px;
+}
+#kkr5{
+  display: block;
+   margin-left: 100px;
+    
+    padding-right: 100px;
+}
+#kkr5 h1{
+    height:20px ;
+    width: 100%;
+    display: block;
+   
+   font-size: 22px;
+}
+hr+p{
+    color: green;
+}
+#kkr2{
+    width: 400px;
+    justify-content: left;
+    text-align: center;
+    padding-right: -200px;
+}
+ #items{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 30px;
+     height: 400px;
+
+
+ } 
+ #items > div{
+     text-align: center;
+ }
+ #items > div>p{
+    color: pink; 
+
+ }  
+ #items > div>h2{
+    color: rgb(110, 104, 104); 
+    font-size: 15px;
+
+ }  
+ #items > div>h4{
+    color: rgb(97, 95, 95); 
+    font-size: 15px;
+
+ }  
+
+ .b1{
+     background-color: white;
+     border:0.5px solid grey;
+     padding: 10px;
+     border-radius: 15px;
+ }
+ .b2{
+     background: rgb(62, 219, 75);
+     border:none;
+     color: white;
+     padding:10px 40px;
+     border-radius: 15px;
+ }
+#items img{
+    height: 250px;
+    width: 300px;
+
+}
+#top p{
+    color: rgb(109, 108, 108);
+}
+#items > div:hover{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#mrp{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+}
+#mrp+button{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+}
+#mrp+button+button{
+    background-color: rgb(80, 165, 0);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: none;
+
+}
