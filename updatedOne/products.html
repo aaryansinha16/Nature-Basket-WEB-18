@@ -57,7 +57,8 @@
                   <div class="sub-menu1">
                       <ul>
                           <li><a href="#">Gift Hamper's</a></li>
-                          <li><a href="products.html">Cheese,Meat & Food Platers</a></li>
+                          <li><a href="products.html">WINE 
+                               & BEER</a></li>
                           <li><a href="#">International Cuisine</a></li>
                           <li><a href="#">Health</a></li>
                           <li><a href="#">Indian Grocery</a></li>
@@ -347,7 +348,7 @@ var wineData=[
         PEICES:"1PC",
         smallmrp:3250,
         MRP:"MRP ₹3250",
-        ADD:"ADD"
+        ADD:" ADD"
        },
        {   beer:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3b929a0e-d9b7-437c-b823-67bfb01d2ea4_425x425.jpg",
        TIME:"DELIVERY IN 90 MINUTES",
@@ -421,27 +422,6 @@ var wineData=[
       
     ];
    
-     
-   //  function changepricerate() {
-   //    var selected = document.querySelector("#sortMrp").value;
-   //    //console.log(selected);
-   //    if (selected == "HTLP") {
-   //      jobArr.sort(function (a, b) {
-   //        return b.personSalary - a.personSalary;
-   //      });
-   //      // console.log(jobArr);
-   //      displayData(jobArr);
-   //    }
-   //    if (selected == "LTHP") {
-   //      jobArr.sort(function (a, b) {
-   //        return a.personSalary - b.personSalary;
-   //      });
-   //      // console.log(jobArr);
-   //      displayData(jobArr);
-   //    }
-   //  }
-
-
     
    wineData.forEach(function(elem){
          
@@ -468,15 +448,15 @@ var wineData=[
         var wine_mrp=document.createElement("button")
         wine_mrp.innerText = elem.MRP;
         wine_mrp.setAttribute("class","mrp")
+        wine_mrp.style.cursor="pointer"
 
-        wine_add=document.createElement("button")
+     var  wine_add=document.createElement("button")
         wine_add.innerText=elem.ADD;
+        wine_add.setAttribute("id","add")
         wine_add.style.cursor="pointer"
         wine_add.addEventListener("click",function(){
-
            Myfunc(elem)
         })
-        wine_add.setAttribute("class","add")
         
 
         box.append(wine_beer,wine_button,wine_brand,wine_Peices,wine_smallmrp,wine_mrp,wine_add)
@@ -484,9 +464,9 @@ var wineData=[
 
     })
     var localstr= JSON.parse(localStorage.getItem("localdatacart"))||[]
-function Myfunc(elem){
-   localstr.push(elem)
-   localStorage.setItem("localdatacart",JSON.stringify(localstr))
+      function Myfunc(elem){
+       localstr.push(elem)
+       localStorage.setItem("localdatacart",JSON.stringify(localstr))
    
 }
 // I am testing github editing
